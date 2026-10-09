@@ -5,6 +5,9 @@
 A custom-designed static website hosted on an AWS EC2 Linux instance using Apache HTTP Server.
 
 This project demonstrates practical cloud computing, Linux administration, basic networking, and website deployment.
+## Website Preview
+
+![AWS EC2 Static Website](website-screenshot.png)
 
 ## Architecture
 
