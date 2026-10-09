@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AWS Cloud Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #172554;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #0f172a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: white;
+            color: #1d4ed8;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            max-width: 700px;
+            text-align: center;
+            margin: 0 auto;
+            color: #475569;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000010;
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 500px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <strong>My Cloud Portfolio</strong>
+        <div>
+            <a href="#about">About</a>
+            <a href="#technology">Technology</a>
+            <a href="#deployment">Deployment</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Welcome to My AWS Website!</h1>
+        <p>
+            Hosted on an AWS EC2 Linux server using Apache HTTP Server.
+        </p>
+        <a href="#technology" class="btn">Explore Project</a>
+    </header>
+
+    <section id="about">
+        <h2>About My Project</h2>
+        <p class="intro">
+            This project demonstrates cloud computing fundamentals,
+            Linux server administration, web server configuration,
+            and static website hosting on Amazon Web Services.
+        </p>
+    </section>
+
+    <section id="technology">
+        <h2>Technology Stack</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>AWS EC2</h3>
+                <p>A virtual server in the AWS cloud.</p>
+            </div>
+
+            <div class="card">
+                <h3>Amazon Linux</h3>
+                <p>The operating system running on the server.</p>
+            </div>
+
+            <div class="card">
+                <h3>Apache</h3>
+                <p>Serves the website to visitors over HTTP.</p>
+            </div>
+
+            <div class="card">
+                <h3>HTML &amp; CSS</h3>
+                <p>Builds the webpage structure and visual design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="deployment">
+        <h2>Deployment Workflow</h2>
+        <p class="intro">
+            1. Launch an EC2 instance.<br>
+            2. Install Apache on Linux.<br>
+            3. Create the website using HTML and CSS.<br>
+            4. Configure HTTP access in the Security Group.<br>
+            5. Open the website using the server's public IP address.
+        </p>
+    </section>
+
+    <footer>
+        <p>AWS EC2 + Apache Static Website Project</p>
+        <p>Built with HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
